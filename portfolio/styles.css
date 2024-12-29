@@ -1,0 +1,96 @@
+
+.header {
+    background:rgb(108, 78, 136);
+    color:violet;
+    text-align: center;
+    padding: 1rem 0;
+    opacity:1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 0.5rem 0;
+}
+
+.navbar a {
+    color:rgb(22, 240, 200);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+    background: #dea2ce;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 2rem 1rem;
+    background: #f4f4f4;
+    margin: 1rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.skills-list div,
+.project {
+    margin: 1rem 0;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    
+  }
+  
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+ .sheik{
+
+    border-radius: 50px;
+    position: absolute;
+    top:30px;
+    right:20px;
+    left:80px;
+ }
+ 
+ h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+ h2{
+    color:#f315b8;
+ }
+ button{
+    color:#e808ad;
+    background-color: violet;
+    
+    border: #f4f4f4;
+    border-radius: 10px;
+
+ }
+ a
+ {
+    text-decoration: none;
+    
+ }
+ 
