@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content and add active class to clicked tab
+            document.getElementById(tabName).style.display = 'block';
+            event.target.classList.add('active');
+        }
+        
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sheik</a>  
+ <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+ </nav>
+
+ </header>
+
+ <section class="home">
+    <div class="home-img">
+        <img src="sheik.png" alt="">
+    </div>
+    <div class="home-content">
+       <h1>Hi, It's<span> Sheik </span></h1>
+       <h3 class="typing-text">I'm a <span></span></h3>
+       
+        <p>I am a passionate Java Enterprise Web Application
+           Developer with experience in building scalable and 
+           efficient web applications. My expertise includes Java, 
+           Spring Boot, Servlets, JSP, JDBC, MySQL, and frontend 
+           technologies like HTML, CSS and  JavaScript .
+            I am eager to contribute to innovative startups and collaborate on enterprise-grade solutions. My goal is to build robust, secure, and user-friendly applications that drive business success.
+           </p>
+      
+       
+       <div class="social-icons">
+       <a href="https://www.linkedin.com/in/sheik-mohammed-1a53ab227" style="color: #df06d8f4;"><i class="fa-brands fa-linkedin" ></i></a>
+       <a href="mailto:sheikmohammed480@gmail.com" style="color: #df06d8f4; "><i class="fa-brands fa-google"></i></a>
+       <a href="https://github.com/SheikMohammed480/EnterpriseJava" style="color: #df06d8f4; "><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/917904119125" style="color: #df06d8f4;"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/sheikmohammed480?igsh=MWV4YmRhbmNzMDF1Ng==" style="color: #df06d8f4;"><i class="fa-brands fa-instagram"></i></a>
+       
+       </a>
+       </div>
+       <a href="#contact" class="btn">Hire me</a>
+       
+    </div>
+ </section>
+ <section id="services">
+    <h2 class="section-title"><span>My Services</span></h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="services-container">
+        <!-- Backend Developer -->
+        <div class="service-box">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend Developer</h3>
+            <p>Specializing in server-side logic, database management, and API development to build scalable web applications.</p>
+            <a href="https://www.simplilearn.com/tutorials/programming-tutorial/what-is-backend-development#:~:text=Backend%20developers%20build%20code%20that,what%20you%20don't%20see.">Learn more</a>
+        </div>
+
+        <!-- Web Developer -->
+        <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <br>
+            <h3>Web Developer</h3>
+            <p>Creating responsive, interactive, and modern websites with optimized performance and user-friendly design.</p>
+            <a href="https://www.tpointtech.com/java-web-development">Learn more</a>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="about-container">
+       
+        <div class="about-content">
+            <h1 style="color:greenyellow;">About Me</h1>
+            <p>Goal-oriented Computer Science Engineer with expertise in Java and web development, 
+                seeking a role as a software developer (Java , C++ , C ) or java web developer 
+                to contribute to high-impact projects by building secure, scalable applications.</p>
+            
+            <!-- Tabs Navigation -->
+            <div class="tabs">
+                <span class="tab active" onclick="showTab('skills')"><i class="fas fa-code"></i> Skills</span>
+                <span class="tab" onclick="showTab('experience')"><i class="fas fa-briefcase"></i> Experience</span>
+                <span class="tab" onclick="showTab('education')"><i class="fas fa-graduation-cap"></i> Education</span>
+                <span class="tab" onclick="showTab('certifications')"><i class="fas fa-certificate"></i> Certifications</span>
+                <span class="tab" onclick="showTab('internship')"><i class="fas fa-building"></i> Internship</span>
+                <span class="tab" onclick="showTab('projects')"><i class="fas fa-project-diagram"></i> Project</span>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="tab-content" id="skills">
+                <h3><i class="fas fa-laptop-code"></i> Skills</h3>
+                <br>
+                <ul class="skills-list">
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fas fa-code"></i> C++</li>
+                    <li><i class="fas fa-code"></i> C</li>
+                    <li><i class="fas fa-database"></i> JDBC</li>
+                    <li><i class="fas fa-cogs"></i> Collection Frameworks</li>
+                    <li><i class="fas fa-laptop"></i> OOPs</li>
+                    <li><i class="fas fa-desktop"></i> Swing</li>
+                    <li><i class="fas fa-rocket"></i> Servlets & JSP</li>
+                    <li><i class="fas fa-server"></i> Hibernate, Spring, Spring Boot</li>
+                    <li><i class="fas fa-cloud"></i> Tomcat Server</li>
+                    <li><i class="fas fa-tools"></i> Postman API</li>
+                    <li><i class="fas fa-code-branch"></i> Eclipse</li>
+                    <li><i class="fas fa-database"></i> Oracle, MySQL, MongoDB</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                </ul>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="tab-content" id="experience" style="display: none;">
+                <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                <p>Fresher</p>
+            </div>
+
+            <!-- Education Section -->
+            <div class="tab-content" id="education" style="display: none;">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <br> <br><br>
+               
+
+
+                <section id="education">
+                   
+                
+                    <div class="progress-container">
+                        <div class="progress-item">
+                            <span class="progress-label">10th - Zion Good Shepherd's Matric Hr Sec School (86%)</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 86%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="progress-item">
+                            <span class="progress-label">12th - Zion Good Shepherd's Matric Hr Sec School (70%)</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="progress-item">
+                            <span class="progress-label">B.E Computer Science - Sethu Institute of Technology (8.8 CGPA)</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <h2> Java Web Development|Elysium Academy Pvt Limited| May-Nov 2024</h2>
+                    </div>
+                </section>
+                
+               
+                
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="tab-content" id="certifications">
+            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="certification-box">
+                <div class="certification-text">
+                    <h4>Java Web Development</h4>
+                    <p>JAVA WEB DEVELOPMENT – ELYSIUM ACADEMY, MADURAI
+                        May 2024 – Nov 2024
+                        <pre>
+                            JSP (JavaServer Pages): Dynamic web content generation.
+                            Servlets: Backend processing for web applications.
+                            Hibernate: ORM (Object Relational Mapping) for seamless database interaction.
+                            Spring Framework: Dependency injection, MVC architecture, and security integration.
+                            During this program, I developed several hands-on projects, emphasizing secure and
+                            efficient application design and deployment. 
+                            Building a dynamic e-commerce platform using Spring MVC.
+                            Implementing RESTful APIs for seamless client-server communication.
+                            Designing database schemas using Hibernate for real-time applications.</p>
+                        </pre>
+                        
+                        
+                </div>
+                <img src="elysiumCertificate.jpeg" alt="Certification" class="certification-img">
+            </div>
+        </div>
+
+        <!-- Internship Section -->
+        <div class="tab-content" id="internship">
+            <h3><i class="fas fa-building"></i> Internship</h3>
+            <div class="internship-container">
+                <div class="internship-box">
+                    <img src="internship2.jpeg" alt="Internship" class="internship-img">
+                    <p><strong>Web App Development – Sputnik Infotech
+                        Sept 2022
+                        Successfully completed live training on web application development. The training emphasized creating responsive web designs, implementing client-server architecture, and using modern development tools for real-world projects.</strong></p>
+                </div>
+                <div class="internship-box">
+                    <img src="internship1.jpeg" alt="Internship" class="internship-img">
+                    <p><strong>Internship – Tarcin Robotic LLP
+                        June 2023
+                        Gained practical experience in front-end and back-end development, database management, and deployment strategies. Worked on a full-stack project that included technologies like JavaScript, Python, and cloud-based services. The internship honed problem-solving skills and introduced advanced deployment methodologies.</strong></p>
+                </div>
+                <div class="internship-box">
+                    <img src="workshop1.png" alt="Internship" class="internship-img">
+                    <p><strong>React Web Development Workshop – Iconix Software Solution Aug 2021
+                        Participated in a five-day free online workshop focusing on React.js fundamentals, including component-based architecture, state management, and creating dynamic user interfaces. This workshop provided hands-on experience in building responsive web applications with React.</strong> (2024)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="tab-content" id="projects">
+            <h3><i class="fas fa-project-diagram"></i> Projects</h3>
+            <div class="projects-container">
+                <div class="project-box">
+                    <div class="project-content">
+                        <h3>EduCrazepolis</h3>
+                        <p>An interactive education platform using HTML, CSS, JavaScript, Python (Django), and MongoDB, integrating gamification to boost user engagement. Implemented REST APIs and features like community forums and mentorship programs.</p>
+                    </div>
+                    <div class="project-images">
+                        <img src="project1.png" alt="Screenshot 1">
+                        <img src="project2.png"alt="Screenshot 2">
+                        <img src="project3.png" alt="Screenshot 3">
+                        <img src="project4.png" alt="Screenshot 4">
+                    </div>
+                </div>
+                
+                <div class="project-box">
+                    <video controls class="project-video">
+                        <source src="project.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><strong>HandPlay Hub</strong> – A Java-based web application featuring secure user authentication, personalized profiles, and two hand-themed games: Hand Cricket and Rock-Paper-Scissors. Integrated Java Servlets, JSP, and MySQL to ensure seamless gameplay and data management.
+                    <a href="https://github.com/SheikMohammed480/EnterpriseJavaWebDevelopment/tree/main/ExampleAdvance/src/main/java/com" >Project link</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+</section>
+
+ <section id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <pre>
+            <h3 style="color:aliceblue"><i class="fa-solid fa-paper-plane"></i>  sheikmohammed480@gmail.com</h3>
+            <h3 style="color:aliceblue"><i class="fa-solid fa-phone"></i>  +91-7904119125</h3>
+            </pre>
+            
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sheik-mohammed-1a53ab227" style="color: #df06d8f4; "><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SheikMohammed480/EnterpriseJava" style="color: #df06d8f4; "><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/917904119125" style="color: #df06d8f4;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://leetcode.com/u/sheik11111/" style="color: #df06d8f4; ">  <i class="fa-solid fa-code"></i></a>
+                
+                <a href="https://www.instagram.com/sheikmohammed480?igsh=MWV4YmRhbmNzMDF1Ng=="  style="color: #df06d8f4; "><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+
+            <!-- Download CV Button -->
+            <button class="btn"><a href="Sheik_resume.pdf" target="_blank" >Download CV</a></button>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form"  action="https://script.google.com/macros/s/AKfycbxjGUxAutl4nQWu6uIEuPQ8wAayaJed92pa2ijlPtF_cpmoSqvVT17GPBz6u6lk2jLr/exec" method="post">
+            <input type="text"  name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        
+        <p id="response-message"></p>
+    </div>
+</section>
+
+</body>
+</html>
+<a href="Sheik_resume.pdf" target="_blank">Download CV</a>
