@@ -61,6 +61,7 @@ nav a:hover,nav a.active{
 @media(max-width:995px){
     nav{
         position:absolute;
+        display: none;
         top: 0%;
         right:0;
         width: 40%;
@@ -112,11 +113,16 @@ section{
 }
 span{
     color:#b74b4b;
+    text-shadow: 0 0 25px #b74b4b;
 }
 .home-content h3{
     font-size:4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+.home-content p{
+    font-size: 1.6rem;
+
 }
 .home-img{
     border-radius:50%;
@@ -124,9 +130,13 @@ span{
 .home-img img {
     width: 25vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px; 
+    box-shadow: 0 0 25px transparent; 
     cursor: pointer;
     transition: 0.2s linear;
+   
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px rgb(242, 47, 47);
 }
 
 
@@ -175,7 +185,7 @@ span{
     height:100%;
     border-left:3px solid black;
     right:-8;
-    animation:cur 0.6s infinite;
+    animation:cursor 0.6s infinite;
 
 }
 @keyframes cursor{
@@ -193,7 +203,13 @@ span{
     content:"Java Web Developer";
     }
     41%,60%{
-        conetnt:"Software Dveloper";
+        content:"Software Developer";
+    }
+    61%,80%{
+        content: "Junior web developer";
+    }
+    81%,100%{
+        content: "Associate Software Engineer";
     }
 
 }
@@ -216,8 +232,9 @@ span{
     .home-content h1{
         font-size:5rem;
     }
+    
     .home-img img{
-        width:70vh;
+        width:70vw;
         margin-top: 4rem;
     }
 }
@@ -241,6 +258,7 @@ span{
 /* Contact Info */
 .contact-info {
     flex: 1;
+    
 }
 
 .contact-info h2 {
@@ -688,3 +706,18 @@ form textarea {
     box-shadow: 0 0 25px #b74b4b;
 }
 
+@keyframes scroll{
+    from {
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+.block,.contact-container{
+    animation:scroll 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0% cover 50%;
+}  
