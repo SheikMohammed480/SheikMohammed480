@@ -16,6 +16,7 @@ body{
     height:100vh;
     overflow-x: hidden;
     background-color: black;
+    color:#f2eeee
     
 
 }
@@ -61,6 +62,7 @@ nav a:hover,nav a.active{
 @media(max-width:995px){
     nav{
         position:absolute;
+        display:none;
         top: 0%;
         right:0;
         width: 40%;
