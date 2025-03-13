@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 html{
     font-size: 62.5%;
